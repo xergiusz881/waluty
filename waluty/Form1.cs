@@ -1,3 +1,5 @@
+using Newtonsoft.Json;
+
 namespace waluty
 {
     public partial class Form1 : Form
@@ -19,7 +21,13 @@ namespace waluty
 
                 string json = response.Content.ReadAsStringAsync().Result;
 
-                richTextBox1.Text = json;
+                //richTextBox1.Text = json;
+
+                apirespons apirespons = JsonConvert.DeserializeObject<apirespons[]>(json)[0];
+
+                double EURRate = apirespons.rates[7].mid;
+
+                richTextBox1.Text = "Dzisiejszy kurs Eur to: " + EURRate.ToString();
             }
         }
     }
