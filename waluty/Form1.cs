@@ -9,7 +9,7 @@ namespace waluty
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void loadFromAPI(object sender, EventArgs e)
         {
             using (HttpClient client = new HttpClient())
             {
@@ -21,13 +21,13 @@ namespace waluty
 
                 string json = response.Content.ReadAsStringAsync().Result;
 
-                //richTextBox1.Text = json;
+                
 
                 apirespons apirespons = JsonConvert.DeserializeObject<apirespons[]>(json)[0];
 
                 //double EURRate = apirespons.rates[7].mid;
 
-                //richTextBox1.Text = "Dzisiejszy kurs Eur to: " + EURRate.ToString();
+                
 
                 double USDRate = apirespons.rates[1].mid;
 
@@ -46,9 +46,9 @@ namespace waluty
             }
         }
 
-        private void richTextBox1_TextChanged(object sender, EventArgs e)
-        {
+       
+        
 
         }
     }
-}
+
