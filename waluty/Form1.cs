@@ -96,6 +96,7 @@ namespace waluty
             {
                 destinationAmount = plnAmount;
             }
+            dAmout.Text = destinationAmount.ToString("F2");
         }
     }
 }

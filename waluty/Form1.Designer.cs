@@ -53,7 +53,7 @@
             label5 = new Label();
             label6 = new Label();
             sAmout = new TextBox();
-            textBox5 = new TextBox();
+            dAmout = new TextBox();
             button2 = new Button();
             tableLayoutPanel1.SuspendLayout();
             groupBox1.SuspendLayout();
@@ -93,7 +93,7 @@
             tableLayoutPanel1.Controls.Add(label5, 0, 3);
             tableLayoutPanel1.Controls.Add(label6, 2, 3);
             tableLayoutPanel1.Controls.Add(sAmout, 1, 3);
-            tableLayoutPanel1.Controls.Add(textBox5, 3, 3);
+            tableLayoutPanel1.Controls.Add(dAmout, 3, 3);
             tableLayoutPanel1.Controls.Add(button2, 0, 4);
             tableLayoutPanel1.Dock = DockStyle.Fill;
             tableLayoutPanel1.Location = new Point(0, 0);
@@ -351,14 +351,14 @@
             sAmout.Size = new Size(194, 23);
             sAmout.TabIndex = 12;
             // 
-            // textBox5
+            // dAmout
             // 
-            textBox5.Dock = DockStyle.Fill;
-            textBox5.Location = new Point(603, 301);
-            textBox5.Name = "textBox5";
-            textBox5.ReadOnly = true;
-            textBox5.Size = new Size(194, 23);
-            textBox5.TabIndex = 13;
+            dAmout.Dock = DockStyle.Fill;
+            dAmout.Location = new Point(603, 301);
+            dAmout.Name = "dAmout";
+            dAmout.ReadOnly = true;
+            dAmout.Size = new Size(194, 23);
+            dAmout.TabIndex = 13;
             // 
             // button2
             // 
@@ -416,7 +416,7 @@
         private Label label5;
         private Label label6;
         private TextBox sAmout;
-        private TextBox textBox5;
+        private TextBox dAmout;
         private Button button2;
     }
 }
