@@ -52,7 +52,7 @@
             PLN_OUT = new RadioButton();
             label5 = new Label();
             label6 = new Label();
-            textBox1 = new TextBox();
+            sAmout = new TextBox();
             textBox5 = new TextBox();
             button2 = new Button();
             tableLayoutPanel1.SuspendLayout();
@@ -92,7 +92,7 @@
             tableLayoutPanel1.Controls.Add(groupBox2, 2, 2);
             tableLayoutPanel1.Controls.Add(label5, 0, 3);
             tableLayoutPanel1.Controls.Add(label6, 2, 3);
-            tableLayoutPanel1.Controls.Add(textBox1, 1, 3);
+            tableLayoutPanel1.Controls.Add(sAmout, 1, 3);
             tableLayoutPanel1.Controls.Add(textBox5, 3, 3);
             tableLayoutPanel1.Controls.Add(button2, 0, 4);
             tableLayoutPanel1.Dock = DockStyle.Fill;
@@ -343,13 +343,13 @@
             label6.Text = "label6";
             label6.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // textBox1
+            // sAmout
             // 
-            textBox1.Dock = DockStyle.Fill;
-            textBox1.Location = new Point(203, 301);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(194, 23);
-            textBox1.TabIndex = 12;
+            sAmout.Dock = DockStyle.Fill;
+            sAmout.Location = new Point(203, 301);
+            sAmout.Name = "sAmout";
+            sAmout.Size = new Size(194, 23);
+            sAmout.TabIndex = 12;
             // 
             // textBox5
             // 
@@ -370,6 +370,7 @@
             button2.TabIndex = 14;
             button2.Text = "przelicz";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += convert;
             // 
             // Form1
             // 
@@ -414,7 +415,7 @@
         private RadioButton PLN_OUT;
         private Label label5;
         private Label label6;
-        private TextBox textBox1;
+        private TextBox sAmout;
         private TextBox textBox5;
         private Button button2;
     }
